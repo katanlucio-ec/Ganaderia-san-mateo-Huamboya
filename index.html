@@ -11,23 +11,23 @@
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; base-uri 'self'; form-action 'self' https://formsubmit.co;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://formsubmit.co; base-uri 'self'; form-action 'self' https://formsubmit.co;">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Ganadería San Mateo — Charolais de Huamboya</title>
 <meta name="description" content="Conoce Ganadería San Mateo, finca familiar de ganado Charolais en Huamboya, Morona Santiago, Ecuador. Mira nuestro hato y contáctanos.">
 <meta name="theme-color" content="#1E3626">
-<link rel="icon" type="image/svg+xml" href="logo-san-mateo.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="icon" type="image/svg+xml" href="assets/logo-san-mateo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ganadería San Mateo — Charolais de Huamboya">
 <meta property="og:description" content="Criadores de ganado Charolais en Huamboya, Morona Santiago, Ecuador. Contáctanos por WhatsApp o correo.">
-<meta property="og:image" content="og-image.jpg">
+<meta property="og:image" content="assets/og-image.jpg">
 <meta property="og:locale" content="es_EC">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ganadería San Mateo — Charolais de Huamboya">
 <meta name="twitter:description" content="Criadores de ganado Charolais en Huamboya, Morona Santiago, Ecuador.">
-<meta name="twitter:image" content="og-image.jpg">
+<meta name="twitter:image" content="assets/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -375,13 +375,23 @@
   .vm-icon svg{width:100%;height:100%;}
   .vm-card h3{font-size:1.28rem; margin-bottom:4px;}
   .vm-card p{color:#4b5142; font-size:0.98rem; line-height:1.65;}
+  .objective-section{margin-top:56px;}
+  .objective-card{background:var(--cream-2); padding:30px 34px; border-left:4px solid var(--clay); box-shadow:0 10px 26px rgba(30,54,38,0.08);}
+  .objective-card h3{font-size:1.4rem; margin-bottom:10px;}
+  .objective-card p{color:#4b5142; font-size:1rem; line-height:1.7;}
+  .values-section{margin-top:64px;}
+  .values-section h3{font-size:1.65rem; margin-bottom:24px;}
+  .values-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+  .value-card{background:rgba(251,248,241,.72); padding:24px 26px; border-left:3px solid var(--moss);}
+  .value-card h4{font-size:1.08rem; margin-bottom:8px;}
+  .value-card p{color:#4b5142; font-size:.95rem; line-height:1.65;}
 
   /* ---------- QUIENES SOMOS (institucion) full ---------- */
   .institution{background:var(--forest); color:var(--cream); padding-top:56px;}
   .institution .wrap{
     display:grid;
-    grid-template-columns:0.9fr 1.3fr;
-    gap:70px;
+    grid-template-columns:1fr;
+    gap:0;
     align-items:start;
   }
   .institution .eyebrow{color:var(--clay-2);}
@@ -394,7 +404,7 @@
     margin-top:44px;
   }
   .institution-stats > div{
-    background:var(--forest);
+    background:#D6C19A;
     padding:26px 18px;
   }
   .institution-stats .num{
@@ -404,14 +414,15 @@
   }
   .institution-stats .lab{
     font-size:0.72rem;
+    font-weight:700;
     letter-spacing:0.1em;
     text-transform:uppercase;
-    color:rgba(246,241,228,0.7);
+    color:#000;
     margin-top:6px;
   }
   .institution-stats .detail{
     margin-top:12px;
-    color:rgba(246,241,228,.76);
+    color:#3b4132;
     font-size:.84rem;
     line-height:1.55;
   }
@@ -420,6 +431,8 @@
 
   /* ---------- RAZA CHAROLAIS ---------- */
   .breed{background:var(--moss-tint);}
+  .breed .sec-head{max-width:100%;}
+  .breed .sec-head .breed-intro{max-width:72ch; line-height:1.7;}
   .breed-grid{
     display:grid;
     grid-template-columns:1.3fr 1fr;
@@ -455,6 +468,9 @@
   }
   .breed-trait h4{font-size:.98rem; margin-bottom:6px; line-height:1.3;}
   .breed-trait p{color:#4b5142; font-size:.86rem; line-height:1.5;}
+  .breed-choice{margin-top:46px; padding:30px 34px; background:var(--cream-2); border-left:4px solid var(--clay); box-shadow:0 10px 26px rgba(30,54,38,.08);}
+  .breed-choice h3{font-size:1.4rem; margin-bottom:10px;}
+  .breed-choice p{color:#4b5142; font-size:1rem; line-height:1.7; max-width:78ch;}
 
   .breed-photos{
     display:flex;
@@ -504,11 +520,15 @@
   .story{background:var(--story-tint);}
   .story-photos{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:22px;
-    margin-bottom:44px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    justify-content:center;
+    gap:24px;
+    width:100%;
+    max-width:920px;
+    margin:0 auto 44px;
   }
   .story-photo{
+    min-width:0;
     margin:0;
     border-radius:4px;
     overflow:hidden;
@@ -554,13 +574,29 @@
     color:#3b4132;
     font-size:1.03rem;
     line-height:1.7;
-    margin-bottom:52px;
+    margin:0 auto 52px;
   }
+  .herd-timeline{display:grid; gap:16px; margin:0 0 42px;}
+  .herd-milestone{display:grid; grid-template-columns:110px 1fr; gap:22px; align-items:start; padding:22px 26px; background:rgba(246,241,228,.72); border-left:4px solid var(--clay);}
+  .herd-milestone .year{font-family:'Fraunces',serif; color:var(--clay); font-size:1.35rem; font-weight:600;}
+  .herd-milestone h3{font-size:1.12rem; margin-bottom:6px;}
+  .herd-milestone p,.herd-name p{color:#3b4132; font-size:.96rem; line-height:1.65;}
+  .herd-name{margin-bottom:54px; padding:26px 30px; background:var(--clay); color:var(--cream); border-radius:4px;}
+  .herd-name h3{font-size:1.3rem; margin-bottom:8px;}
+  .herd-name p{color:rgba(246,241,228,.82);}
+  .story-moment{margin-bottom:28px;}
+  .story-moment h3{font-size:1.65rem; margin-bottom:10px;}
+  .story-moment p{color:#4b5142; font-size:1rem; line-height:1.65; max-width:70ch;}
   .story-videos{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     gap:24px;
   }
+  .video-filters{display:flex;flex-wrap:wrap;gap:10px;margin:-14px 0 28px;}
+  .video-filter{border:1px solid rgba(246,241,228,.3);border-radius:999px;padding:10px 18px;background:transparent;color:var(--cream);font:600 .9rem 'Work Sans',sans-serif;cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease;}
+  .video-filter:hover,.video-filter[aria-pressed="true"]{background:var(--clay);border-color:var(--clay);color:var(--cream);}
+  .video-filter:focus-visible{outline:3px solid var(--cream);outline-offset:3px;}
+  .story-videos .story-video[hidden]{display:none;}
   .story-video{background:var(--forest-2); padding:14px; border-radius:4px;}
   .story-video video{
     display:block;
@@ -578,8 +614,18 @@
     line-height:1.5;
   }
   @media (max-width:900px){
-    .story-photos{grid-template-columns:1fr;}
+    .story-photos{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
     .story-videos{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    .herd-milestone{grid-template-columns:1fr; gap:8px; padding:20px;}
+    .herd-name{padding:22px;}
+    .story-photos{grid-template-columns:minmax(0,520px);gap:18px;}
+    .story-text{font-size:.96rem;}
+    .story-photo figcaption{padding:13px 15px;font-size:.82rem;}
+    .story-photo-heading{padding:14px 16px 26px;}
+    .story-photo-heading strong{font-size:1rem;}
+    .story-photo-heading span{font-size:.76rem;}
   }
 
   .gallery{background:var(--gallery-tint);}
@@ -588,6 +634,12 @@
     grid-template-columns:repeat(4, 1fr);
     gap:22px;
   }
+  .gallery-filters{display:flex;flex-wrap:wrap;gap:10px;margin:-14px 0 28px;}
+  .gallery-filter{border:1px solid rgba(30,54,38,.22);border-radius:999px;padding:10px 18px;background:var(--cream-2);color:var(--forest);font:600 .9rem 'Work Sans',sans-serif;cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease;}
+  .gallery-filter:hover,.gallery-filter[aria-pressed="true"]{background:var(--forest);border-color:var(--forest);color:var(--cream);}
+  .gallery-filter:focus-visible{outline:3px solid var(--clay);outline-offset:3px;}
+  .gallery-grid .g-item[hidden]{display:none;}
+  .gallery-empty{margin:8px 0 24px;padding:18px 22px;background:rgba(246,241,228,.72);border-left:3px solid var(--clay);color:#3b4132;line-height:1.6;}
   .gallery-grid .g-item:nth-child(1){grid-column:auto; grid-row:auto;}
   .ph-tile{
     background:var(--cream);
@@ -944,6 +996,10 @@
   @media (max-width:640px){
     body{font-size:15px;}
     .wrap{padding:0 20px;}
+    .gallery-filters{gap:8px;}
+    .gallery-filter{padding:9px 14px;font-size:.84rem;}
+    .values-section{margin-top:44px;}
+    .values-grid{grid-template-columns:1fr;}
     header.site-nav{padding:14px 0;}
     header.site-nav.scrolled{padding:10px 0;}
     .brand-mini img{width:44px;height:44px;}
@@ -987,7 +1043,6 @@
   .story-photo:first-child .g-photo img{object-position:center 72%;}
   .story-photo video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;object-position:center;background:#101b12;}
   .story-videos{align-items:start;}
-  .story-reel{max-width:720px;margin:0 auto 40px;}
   .gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;}
   .gallery-grid .g-item{min-width:0;}
   .gallery .sec-head{max-width:720px;}
@@ -1083,7 +1138,7 @@
 <header class="site-nav" id="siteNav">
   <div class="wrap">
     <a href="#top" class="brand-mini" aria-label="Ganadería San Mateo — inicio">
-      <img src="logo-san-mateo.svg" alt="Ganadería San Mateo" width="54" height="54">
+      <img src="assets/logo-san-mateo.svg" alt="Logo SM de Ganadería San Mateo" width="54" height="54">
       <span class="name">Ganadería<br>San Mateo<span>Charolais · Huamboya</span></span>
     </a>
 
@@ -1150,7 +1205,9 @@
   <div class="wrap">
     <div class="institution-text">
       <p class="eyebrow">Quiénes somos</p>
-      <h2>Tradición familiar en el piedemonte amazónico</h2>
+      <h2>Una historia familiar que vuelve a empezar</h2>
+      <p>La historia de Ganadería San Mateo comenzó cuando yo era niño: mi padre ya criaba ganado y, con mucho esfuerzo, me apoyó para que pudiera terminar mis estudios. Para salir adelante, vendió todo su ganado y, con el paso del tiempo, arrendó sus potreros a otros ganaderos.</p>
+      <p>Años después, cuando tenía 20 años, decidí comenzar mi propio camino. En 2022 solicité mi primer préstamo bancario y compré mis primeros animales. Así nació esta nueva etapa de nuestra historia familiar. Hoy, desde Huamboya, seguimos trabajando con dedicación en la crianza de ganado Charolais y en el cuidado responsable de nuestro hato y de la tierra que nos acoge.</p>
       <p>Ganadería San Mateo es una finca familiar de Huamboya dedicada a la crianza de ganado Charolais. El trabajo diario se adapta al clima y a los potreros de la Amazonía, con atención cercana a cada animal.</p>
       <p>Creemos en el cuidado responsable, la buena alimentación y el mejoramiento continuo del hato, respetando la tierra que nos acoge.</p>
     </div>
@@ -1158,22 +1215,22 @@
       <div>
         <div class="num">Huamboya</div>
         <div class="lab">Nuestra tierra</div>
-        <p class="detail">Aquí está nuestra finca, en el corazón de Morona Santiago.</p>
+        <p class="detail">Aquí está nuestra finca familiar, en el corazón de Morona Santiago. Desde Huamboya trabajamos en la crianza de ganado Charolais, con dedicación al cuidado de los animales, los potreros y la tierra amazónica que nos acoge.</p>
       </div>
       <div>
         <div class="num">Charolais</div>
         <div class="lab">Nuestra raza</div>
-        <p class="detail">Criamos y cuidamos ganado Charolais con dedicación.</p>
+        <p class="detail">Criamos ganado Charolais con dedicación y atención cercana en cada etapa. Trabajamos día a día por el bienestar de nuestros animales y el desarrollo responsable de nuestro hato, orgullosos de criar esta raza en nuestra finca familiar de Huamboya.</p>
       </div>
       <div>
         <div class="num">Familiar</div>
         <div class="lab">Nuestro trabajo</div>
-        <p class="detail">Cada día trabajamos unidos por el bienestar del hato.</p>
+        <p class="detail">Somos una familia unida por el amor al campo y la ganadería. Cada día compartimos el trabajo y la responsabilidad de cuidar a nuestros animales, atender los potreros y hacer crecer nuestro hato con dedicación y orgullo.</p>
       </div>
       <div>
         <div class="num">Amazonía</div>
         <div class="lab">Nuestro entorno</div>
-        <p class="detail">Cuidamos nuestros animales respetando la naturaleza que nos rodea.</p>
+        <p class="detail">Nuestra finca está en el entorno amazónico de Huamboya, una tierra que valoramos y queremos cuidar. Trabajamos procurando el bienestar de nuestros animales y el buen cuidado de los potreros, respetando la naturaleza que nos rodea y que forma parte de nuestra vida diaria.</p>
       </div>
     </div>
   </div>
@@ -1215,6 +1272,33 @@
         </div>
       </div>
     </div>
+    <div class="objective-section">
+      <article class="objective-card">
+        <h3>Nuestro objetivo</h3>
+        <p>Buscamos mejorar la genética de nuestro ganado Charolais generación tras generación. Actualmente estamos en un proceso de inseminación artificial; además, vendemos los toretes que nacen e incorporamos vaconas y embriones para renovar y fortalecer el hato.</p>
+      </article>
+    </div>
+    <div class="values-section">
+      <h3>Nuestros valores</h3>
+      <div class="values-grid">
+        <article class="value-card">
+          <h4>Responsabilidad</h4>
+          <p>Cumplimos con dedicación el compromiso de cuidar nuestro ganado y trabajar cada día por el bienestar del hato.</p>
+        </article>
+        <article class="value-card">
+          <h4>Trabajo en familia</h4>
+          <p>Valoramos nuestras raíces y el esfuerzo compartido que mantiene viva la tradición ganadera de nuestra familia.</p>
+        </article>
+        <article class="value-card">
+          <h4>Respeto por la naturaleza</h4>
+          <p>Apreciamos la tierra amazónica de Huamboya y procuramos cuidar los potreros y el entorno que nos rodea.</p>
+        </article>
+        <article class="value-card">
+          <h4>Bienestar animal</h4>
+          <p>Brindamos atención cercana a nuestros animales y procuramos que tengan el cuidado y la alimentación adecuados.</p>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1223,8 +1307,8 @@
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Nuestro ganado</p>
-      <h2>Por qué criamos Charolais</h2>
-      <p>Originaria de Francia, la raza Charolais se reconoce por su capa blanca o crema y su desarrollo muscular. En nuestra finca trabajamos para criar animales sanos, adaptados al entorno de Huamboya.</p>
+      <h2>Características de la raza Charolais</h2>
+      <p class="breed-intro">Originaria de Francia, la raza Charolais se reconoce por su capa blanca o crema y su conformación muscular. En nuestra finca nos interesa conocer y desarrollar sus cualidades con cuidado y manejo responsable, en el entorno de Huamboya.</p>
     </div>
 
     <div class="breed-grid">
@@ -1239,22 +1323,22 @@
         <div class="breed-trait">
           <span class="mark">02</span>
           <div>
-            <h4>Desarrollo muscular</h4>
-            <p>Su estructura fuerte y desarrollo muscular destacan. La alimentación y el cuidado adecuados apoyan un crecimiento saludable.</p>
+            <h4>Conformación muscular</h4>
+            <p>La raza se distingue por su estructura corporal fuerte y su desarrollo muscular, cualidades que valoramos en nuestro ganado.</p>
           </div>
         </div>
         <div class="breed-trait">
           <span class="mark">03</span>
           <div>
-            <h4>Temperamento manejable</h4>
-            <p>El trato paciente facilita el cuidado diario y permite observar mejor el estado y las necesidades de cada animal.</p>
+            <h4>Crecimiento</h4>
+            <p>El crecimiento rápido es una de las cualidades que nos motivó a elegir esta raza para desarrollar nuestro hato.</p>
           </div>
         </div>
         <div class="breed-trait">
           <span class="mark">04</span>
           <div>
-            <h4>Manejo adaptado a Huamboya</h4>
-            <p>Adaptamos el manejo al clima húmedo de Huamboya y cuidamos los potreros donde pasta el ganado durante el año.</p>
+            <h4>Robustez</h4>
+            <p>Su robustez es otra característica que apreciamos y una de las razones por las que elegimos criar Charolais en nuestra finca.</p>
           </div>
         </div>
       </div>
@@ -1274,6 +1358,14 @@
         </div>
       </div>
     </div>
+    <div class="breed-choice">
+      <h3>¿Por qué elegimos Charolais?</h3>
+      <p>Elegimos la raza Charolais por su rápido crecimiento y su robustez. Estas cualidades se relacionan con nuestro objetivo de fortalecer y mejorar progresivamente la genética de nuestro hato. Por eso trabajamos con dedicación en su crianza y cuidado aquí, en Huamboya.</p>
+    </div>
+    <div class="breed-choice">
+      <h3>Mejoramiento genético, generación tras generación</h3>
+      <p>Actualmente estamos en un proceso de mejoramiento genético mediante inseminación artificial. Los toretes que nacen se destinan a la venta; para renovar y fortalecer el hato, incorporamos vaconas y compramos embriones. Así buscamos seguir mejorando nuestro ganado Charolais en cada generación.</p>
+    </div>
   </div>
 </section>
 
@@ -1281,8 +1373,49 @@
 <section class="story pad page-view" id="historia-ternero">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Una historia del hato</p>
-      <h2>Un ternero que salió adelante</h2>
+      <p class="eyebrow">Nuestras raíces</p>
+      <h2>Historia del hato</h2>
+      <p>La historia ganadera de nuestra familia comenzó con mi padre y continúa hoy con una nueva generación, la crianza de Charolais y el compromiso de seguir mejorando nuestro hato.</p>
+    </div>
+
+    <div class="herd-timeline">
+      <article class="herd-milestone">
+        <span class="year">Desde 1997</span>
+        <div>
+          <h3>Los comienzos de mi padre</h3>
+          <p>Mi padre comenzó a criar ganado desde muy joven. Para iniciar, compró sus primeros animales y así empezó una tradición familiar que con los años se convertiría en parte de nuestra historia.</p>
+        </div>
+      </article>
+      <article class="herd-milestone">
+        <span class="year">Con los años</span>
+        <div>
+          <h3>Una etapa de esfuerzo y apoyo</h3>
+          <p>Cuando llegó el momento de apoyarme con mis estudios, mi padre vendió todo su ganado. Más adelante, arrendó sus potreros a otros ganaderos, y así pasó el tiempo mientras yo crecía.</p>
+        </div>
+      </article>
+      <article class="herd-milestone">
+        <span class="year">2022</span>
+        <div>
+          <h3>El comienzo de una nueva etapa</h3>
+          <p>Decidí retomar el camino ganadero y compré mis primeros animales con un préstamo bancario. Así comenzó esta nueva etapa de la ganadería familiar.</p>
+        </div>
+      </article>
+      <article class="herd-milestone">
+        <span class="year">Hoy</span>
+        <div>
+          <h3>Mejoramiento para las próximas generaciones</h3>
+          <p>Seguimos criando ganado Charolais y trabajando en el mejoramiento genético mediante inseminación artificial. Vendemos los toretes que nacen e incorporamos vaconas y embriones para renovar y fortalecer el hato.</p>
+        </div>
+      </article>
+    </div>
+
+    <aside class="herd-name">
+      <h3>Un nombre en honor a mi hijo Mateo</h3>
+      <p>Elegí llamar Ganadería San Mateo a mi proyecto en honor a mi primer hijo, Mateo. Por eso, su nombre forma parte de la identidad de nuestra ganadería y de la historia familiar que seguimos construyendo.</p>
+    </aside>
+
+    <div class="story-moment">
+      <h3>Un ternero que salió adelante</h3>
       <p>En la ganadería también hay momentos difíciles. Este ternero nació débil y recibió cuidados cercanos de la familia mientras su madre permanecía a su lado.</p>
     </div>
 
@@ -1298,25 +1431,27 @@
         <figcaption>Los primeros cuidados después del nacimiento.</figcaption>
       </figure>
       <figure class="story-photo">
-        <video controls playsinline preload="none" poster="img/poster-vaca-cria.jpg" aria-label="Video de la madre junto a su cría">
-          <source src="video/vaca-y-cria.mp4" type="video/mp4">
-          Tu navegador no soporta la reproducción de video. Puedes <a href="video/vaca-y-cria.mp4">descargar el video aquí</a>.
-        </video>
-        <figcaption>La madre permanece junto a su cría.</figcaption>
+        <button class="g-photo" type="button" data-title="La madre junto a su ternero recién nacido" data-desc="La madre permanece junto a su ternero en el potrero después del nacimiento." aria-label="Ampliar foto: la madre junto a su ternero recién nacido">
+          <img src="img/20250623_065246.jpg" alt="Vaca junto a su ternero recién nacido en el potrero" loading="lazy" decoding="async">
+        </button>
+        <figcaption>La madre acompaña a su ternero en sus primeros momentos.</figcaption>
+      </figure>
+      <figure class="story-photo">
+        <button class="g-photo" type="button" data-title="El ternero después de nacer" data-desc="El ternero descansa en el pasto después de nacer." aria-label="Ampliar foto: el ternero después de nacer">
+          <img src="img/20250623_071803.jpg" alt="Ternero recién nacido descansando en el pasto" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Un momento de descanso después del nacimiento.</figcaption>
+      </figure>
+      <figure class="story-photo">
+        <button class="g-photo" type="button" data-title="La madre con sus crías" data-desc="La vaca permanece con sus crías en el potrero." aria-label="Ampliar foto: la madre con sus crías">
+          <img src="img/20250623_171435.jpg" alt="Vaca junto a sus terneros en el potrero" loading="lazy" decoding="async">
+        </button>
+        <figcaption>La madre permanece junto a sus crías.</figcaption>
       </figure>
     </div>
 
     <p class="story-text">Al nacer, el ternero necesitó ayuda para mantenerse en pie. La familia lo abrigó y lo atendió de cerca; con el paso de las horas, fue recuperando fuerzas. Su historia refleja la atención que brindamos a cada animal, especialmente cuando más lo necesita.</p>
 
-    <div class="story-reel">
-      <div class="story-video">
-        <video controls playsinline preload="none" poster="img/poster-cuidado.jpg" aria-label="Video de los cuidados del ternero">
-          <source src="video/cuidado-ternero.mp4" type="video/mp4">
-          Tu navegador no soporta la reproducción de video. Puedes <a href="video/cuidado-ternero.mp4">descargar el video aquí</a>.
-        </video>
-        <p class="story-video-cap">La familia lo abriga y lo atiende de cerca.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1324,40 +1459,85 @@
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Galería de la finca</p>
-      <h2>Imágenes del hato</h2>
+      <h2>Álbumes de Ganadería San Mateo</h2>
       <p>En Ganadería San Mateo criamos ganado Charolais en Huamboya, con atención diaria y respeto por cada animal. Aquí compartimos parte de nuestro hato, sus terneros y las labores que forman parte de la vida en la finca, rodeada por el paisaje amazónico de Morona Santiago. Cada imagen refleja el cuidado y la dedicación con los que trabajamos para que nuestros animales crezcan sanos.</p>
     </div>
 
+    <div class="gallery-filters" role="group" aria-label="Filtrar fotos por categoría">
+      <button class="gallery-filter" type="button" data-category="all" aria-pressed="true">Galería principal</button>
+      <button class="gallery-filter" type="button" data-category="ganado" aria-pressed="false">Ganado</button>
+      <button class="gallery-filter" type="button" data-category="instalaciones" aria-pressed="false">Instalaciones</button>
+      <button class="gallery-filter" type="button" data-category="campo" aria-pressed="false">Campo</button>
+      <button class="gallery-filter" type="button" data-category="familia" aria-pressed="false">Nuestra familia</button>
+    </div>
+    <p class="gallery-empty" id="galleryEmpty" role="status" aria-live="polite" hidden></p>
+
     <div class="gallery-grid">
-      <div class="g-item">
+      <div class="g-item" data-categories="ganado campo">
         <button class="ph-tile g-photo" type="button" data-title="Un ejemplar en el potrero" data-desc="Uno de los animales de Ganadería San Mateo en un potrero de la finca, rodeado por el paisaje amazónico de Huamboya." aria-label="Ampliar foto: un ejemplar en el potrero">
           <img src="img/cow-01.jpg" alt="Ejemplar Charolais de capa clara en un potrero de Ganadería San Mateo" loading="lazy" decoding="async">
         </button>
         <p class="g-cap">Un ejemplar en el potrero<span>El Charolais recorre los potreros de nuestra finca, rodeado por el paisaje de Huamboya.</span></p>
       </div>
-      <div class="g-item">
+      <div class="g-item" data-categories="ganado">
         <button class="ph-tile g-photo" type="button" data-title="Retrato de un Charolais" data-desc="Retrato cercano de uno de los animales del hato, con su capa clara característica." aria-label="Ampliar foto: retrato de un Charolais">
           <img src="img/cow-02.jpg" alt="Retrato cercano de un ejemplar Charolais de la finca" loading="lazy" decoding="async">
         </button>
         <p class="g-cap">Retrato de un Charolais<span>Su capa clara y su presencia distinguen a esta raza, que criamos con dedicación en San Mateo.</span></p>
       </div>
-      <div class="g-item">
+      <div class="g-item" data-categories="ganado">
         <button class="ph-tile g-photo" type="button" data-title="Cuidado diario en la finca" data-desc="Un momento del trabajo diario con el ganado en los potreros de San Mateo." aria-label="Ampliar foto: cuidado diario en la finca">
           <img src="img/cow-03.jpg" alt="Ganado y cuidador durante las labores diarias en el potrero" loading="lazy" decoding="async">
         </button>
         <p class="g-cap">Cuidado diario en la finca<span>Las labores cotidianas y la observación cercana ayudan a atender las necesidades de cada animal.</span></p>
       </div>
-      <div class="g-item">
+      <div class="g-item" data-categories="ganado">
         <button class="ph-tile g-photo" type="button" data-title="Atención cercana" data-desc="El trato diario y tranquilo ayuda a conocer a los animales y atender sus necesidades." aria-label="Ampliar foto: atención cercana">
           <img src="img/cow-04.jpg" alt="Cuidador atendiendo de cerca a un animal del hato" loading="lazy" decoding="async">
         </button>
         <p class="g-cap">Atención cercana<span>El trato tranquilo y constante fortalece el cuidado responsable de nuestro ganado.</span></p>
       </div>
-      <div class="g-item">
+      <div class="g-item" data-categories="ganado">
         <button class="ph-tile g-photo" type="button" data-title="La nueva generación" data-desc="Dos terneros comparten el potrero en la finca familiar de Huamboya." aria-label="Ampliar foto: terneros en el potrero">
           <img src="img/cow-05-calves.jpg" alt="Dos terneros de la finca juntos en el potrero" loading="lazy" decoding="async">
         </button>
         <p class="g-cap">La nueva generación<span>Los terneros representan el crecimiento del hato y el futuro de nuestra ganadería familiar.</span></p>
+      </div>
+      <div class="g-item" data-categories="instalaciones" data-show-in-all="false" hidden>
+        <button class="ph-tile g-photo" type="button" data-title="Cuidado del ternero en la finca" data-desc="Un miembro de la familia atiende a un ternero en la finca." aria-label="Ampliar foto: cuidado del ternero en la finca">
+          <img src="img/instalaciones-cuidado-ternero.jpg" alt="Ganadero atendiendo a un ternero en la finca" loading="lazy" decoding="async">
+        </button>
+        <p class="g-cap">Cuidado del ternero<span>Atención cercana a los animales durante las labores diarias de la finca.</span></p>
+      </div>
+      <div class="g-item" data-categories="instalaciones" data-show-in-all="false" hidden>
+        <button class="ph-tile g-photo" type="button" data-title="Trabajo en la finca" data-desc="Un momento de la vida diaria en los espacios de la finca." aria-label="Ampliar foto: trabajo en la finca">
+          <img src="img/instalaciones-trabajo-finca.jpg" alt="Ganadero en un espacio abierto de la finca" loading="lazy" decoding="async">
+        </button>
+        <p class="g-cap">Trabajo en la finca<span>Un momento cotidiano en el espacio de trabajo de nuestra finca.</span></p>
+      </div>
+      <div class="g-item" data-categories="familia" data-show-in-all="false" hidden>
+        <button class="ph-tile g-photo" type="button" data-title="Un día de trabajo en familia" data-desc="Un momento de trabajo y cuidado del ganado en la finca familiar." aria-label="Ampliar foto: un día de trabajo en familia">
+          <img src="img/IMG-20250724-WA0038.jpg" alt="Miembro de la familia en la finca" loading="lazy" decoding="async">
+        </button>
+        <p class="g-cap">Un día en la finca<span>El trabajo ganadero también forma parte de nuestra historia familiar.</span></p>
+      </div>
+      <div class="g-item" data-categories="familia" data-show-in-all="false" hidden>
+        <button class="ph-tile g-photo" type="button" data-title="Un recuerdo en pareja" data-desc="Un recuerdo familiar compartido en pareja." aria-label="Ampliar foto: un recuerdo en pareja">
+          <img src="img/IMG_20231229_160353_890.webp" alt="Pareja compartiendo un recuerdo familiar" loading="lazy" decoding="async">
+        </button>
+        <p class="g-cap">Un recuerdo en pareja<span>La familia es una parte importante de la historia de San Mateo.</span></p>
+      </div>
+      <div class="g-item" data-categories="familia" data-show-in-all="false" hidden>
+        <button class="ph-tile g-photo" type="button" data-title="Un recuerdo con mi hijo" data-desc="Un momento familiar junto a mi hijo." aria-label="Ampliar foto: un recuerdo con mi hijo">
+          <img src="img/1662930442552.jpg" alt="Padre compartiendo un momento con su hijo" loading="lazy" decoding="async">
+        </button>
+        <p class="g-cap">Un recuerdo con mi hijo<span>Mateo inspira el nombre de Ganadería San Mateo y es parte de nuestra historia.</span></p>
+      </div>
+      <div class="g-item" data-categories="familia" data-show-in-all="false" hidden>
+        <button class="ph-tile g-photo" type="button" data-title="Cuidado del ternero" data-desc="Un momento de cuidado cercano de un ternero en la finca." aria-label="Ampliar foto: cuidado del ternero">
+          <img src="img/IMG-20250724-WA0034.jpg" alt="Ganadero atendiendo con cuidado a un ternero" loading="lazy" decoding="async">
+        </button>
+        <p class="g-cap">Cuidado del ternero<span>La atención a los animales también es parte del trabajo que compartimos en familia.</span></p>
       </div>
     </div>
   </div>
@@ -1369,30 +1549,57 @@
     <div class="sec-head">
       <p class="eyebrow">Videos</p>
       <h2>Así vive nuestro hato</h2>
-      <p>Recorre en video los potreros y terrenos de Ganadería San Mateo, observa el entorno donde criamos nuestro ganado Charolais y acompáñanos en algunos momentos de la vida diaria en la finca. Las imágenes muestran el paisaje de Huamboya, los espacios abiertos junto al monte y el cuidado cercano que dedicamos a nuestro hato.</p>
+      <p>Te invitamos a conocer Ganadería San Mateo a través de estos videos. Recorre la finca y sus potreros, acompáñanos en las labores cotidianas de cuidado del ganado y mira los primeros momentos de un ternero junto a su madre. Selecciona una categoría para encontrar cada video.</p>
+    </div>
+
+    <div class="video-filters" role="group" aria-label="Filtrar videos por categoría">
+      <button class="video-filter" type="button" data-video-category="recorrido" aria-pressed="true">Recorrido por la finca</button>
+      <button class="video-filter" type="button" data-video-category="cuidado" aria-pressed="false">Cómo cuidamos al ganado día a día</button>
+      <button class="video-filter" type="button" data-video-category="nacimiento" aria-pressed="false">Nacimiento de ternero</button>
     </div>
 
     <div class="story-videos">
-      <div class="story-video">
+      <div class="story-video" data-video-categories="cuidado" hidden>
         <video controls playsinline preload="none" poster="img/video-poster-2.jpg" aria-label="Video del trabajo diario en la finca">
           <source src="video/finca-nuevo.mp4" type="video/mp4">
           Tu navegador no soporta la reproducción de video. Puedes <a href="video/finca-nuevo.mp4">descargar el video aquí</a>.
         </video>
-        <p class="story-video-cap">Un vistazo real al trabajo diario en el potrero de la finca.</p>
+        <p class="story-video-cap">Cómo cuidamos al ganado durante el trabajo diario en el potrero.</p>
       </div>
-      <div class="story-video">
-        <video controls playsinline preload="none" poster="img/poster-hallazgo-1.jpg" aria-label="Video de los potreros de Ganadería San Mateo">
-          <source src="video/hallazgo-1.mp4" type="video/mp4">
-          Tu navegador no soporta la reproducción de video. Puedes <a href="video/hallazgo-1.mp4">descargar el video aquí</a>.
+      <div class="story-video" data-video-categories="recorrido">
+        <video controls playsinline preload="none" poster="img/poster-hallazgo-1.jpg" aria-label="Recorrido por la finca al amanecer">
+          <source src="video/20260905_060231.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video. Puedes <a href="video/20260905_060231.mp4">descargar el video aquí</a>.
         </video>
-        <p class="story-video-cap">Recorrido por los terrenos y potreros de Ganadería San Mateo.</p>
+        <p class="story-video-cap">Un recorrido por la finca al comenzar el día.</p>
       </div>
-      <div class="story-video">
-        <video controls playsinline preload="none" poster="img/poster-hallazgo-2.jpg" aria-label="Video de un recorrido por la finca">
-          <source src="video/hallazgo-2.mp4" type="video/mp4">
-          Tu navegador no soporta la reproducción de video. Puedes <a href="video/hallazgo-2.mp4">descargar el video aquí</a>.
+      <div class="story-video" data-video-categories="recorrido">
+        <video controls playsinline preload="none" poster="img/poster-hallazgo-2.jpg" aria-label="Recorrido por los potreros de la finca">
+          <source src="video/20260905_060813.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video. Puedes <a href="video/20260905_060813.mp4">descargar el video aquí</a>.
         </video>
-        <p class="story-video-cap">Otro recorrido por la finca, cerca del monte.</p>
+        <p class="story-video-cap">Un vistazo a los potreros de Ganadería San Mateo.</p>
+      </div>
+      <div class="story-video" data-video-categories="nacimiento" hidden>
+        <video controls playsinline preload="none" poster="img/poster-vaca-cria.jpg" aria-label="Video de la madre junto a su cría">
+          <source src="video/vaca-y-cria.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video. Puedes <a href="video/vaca-y-cria.mp4">descargar el video aquí</a>.
+        </video>
+        <p class="story-video-cap">La madre acompaña a su ternero en sus primeros momentos.</p>
+      </div>
+      <div class="story-video" data-video-categories="nacimiento" hidden>
+        <video controls playsinline preload="none" poster="img/poster-cuidado.jpg" aria-label="Video de los cuidados del ternero recién nacido">
+          <source src="video/cuidado-ternero.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video. Puedes <a href="video/cuidado-ternero.mp4">descargar el video aquí</a>.
+        </video>
+        <p class="story-video-cap">Los cuidados que recibió el ternero después de nacer.</p>
+      </div>
+      <div class="story-video" data-video-categories="nacimiento" hidden>
+        <video controls playsinline preload="none" poster="img/20250623_065246.jpg" aria-label="Video del nacimiento del ternero">
+          <source src="img/20250623_065541.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video. Puedes <a href="img/20250623_065541.mp4">descargar el video aquí</a>.
+        </video>
+        <p class="story-video-cap">El nacimiento del ternero y sus primeros momentos junto a la madre.</p>
       </div>
     </div>
   </div>
@@ -1451,7 +1658,6 @@
         </div>
 
         <button class="btn btn-primary" type="submit">Enviar calificación</button>
-        <p class="rating-status" id="ratingStatus" role="status" aria-live="polite"></p>
       </form>
       <p class="rating-note">Las visitas se contabilizan de forma estadística con Google Analytics. No vemos el nombre de quienes visitan la página.</p>
     </div>
@@ -1686,91 +1892,63 @@
     }
   });
 
-  const ratingForm = document.querySelector('.rating-form');
-  const ratingStatus = document.getElementById('ratingStatus');
-
-  function saveLocalRating(entry) {
-    try {
-      const saved = JSON.parse(localStorage.getItem('ganaderia-san-mateo-ratings') || '[]');
-      saved.push(entry);
-      localStorage.setItem('ganaderia-san-mateo-ratings', JSON.stringify(saved));
-    } catch (error) {
-      console.warn('No se pudo guardar la calificación localmente.', error);
-    }
-  }
-
-  ratingForm.addEventListener('submit', async event => {
-    if (window.location.protocol === 'file:') {
-      event.preventDefault();
-      ratingStatus.textContent = 'Abre esta página desde XAMPP (http://localhost/...) para guardar la calificación.';
-      return;
-    }
-
-    const isLocalServer = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
-    if (!isLocalServer) {
-      return;
-    }
-
-    event.preventDefault();
-    const submitButton = ratingForm.querySelector('button[type="submit"]');
-    submitButton.disabled = true;
-    ratingStatus.textContent = 'Enviando tu calificación…';
-    const formData = new URLSearchParams(new FormData(ratingForm));
-
-    try {
-      const response = await fetch(new URL('api/submit-rating.php', window.location.href), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({
-          estrellas: formData.get('estrellas'),
-          comentario: formData.get('comentario') || ''
-        })
-      });
-
-      if (!response.ok) {
-        ratingStatus.textContent = 'No se pudo guardar. Verifica que Apache y MySQL estén activos y que la base de datos esté creada.';
-        submitButton.disabled = false;
-        return;
-      }
-
-      const payload = {
-        estrellas: Number(formData.get('estrellas')),
-        comentario: formData.get('comentario') || '',
-        fecha: new Date().toISOString()
-      };
-
-      saveLocalRating(payload);
-      ratingForm.reset();
-      ratingStatus.textContent = '¡Gracias por calificar nuestra página!';
-      submitButton.disabled = false;
-    } catch (error) {
-      const payload = {
-        estrellas: Number(formData.get('estrellas')),
-        comentario: formData.get('comentario') || '',
-        fecha: new Date().toISOString(),
-        fallback: true
-      };
-      saveLocalRating(payload);
-      ratingStatus.textContent = 'No se pudo enviar al servidor, pero tu calificación quedó guardada localmente.';
-      submitButton.disabled = false;
-      console.error(error);
-    }
-  });
-
   // Lightbox de la galería
   const photos = Array.from(document.querySelectorAll('.g-photo'));
+  const galleryItems = Array.from(document.querySelectorAll('#galeria .g-item'));
+  const galleryFilters = Array.from(document.querySelectorAll('#galeria .gallery-filter'));
+  const galleryEmpty = document.getElementById('galleryEmpty');
+  const videoCards = Array.from(document.querySelectorAll('#videos .story-video'));
+  const videoFilters = Array.from(document.querySelectorAll('#videos .video-filter'));
   const lightbox = document.getElementById('lightbox');
   const lbImg = document.getElementById('lbImg');
   const lbTitle = document.getElementById('lbTitle');
   const lbDesc = document.getElementById('lbDesc');
   const lbClose = document.getElementById('lbClose');
+  let lightboxPhotos = photos;
   let currentPhoto = 0;
   let returnFocus = null;
 
-  function openLightbox(index){
+  galleryFilters.forEach((filter) => filter.addEventListener('click', () => {
+    const category = filter.dataset.category;
+    let visibleCount = 0;
+
+    galleryFilters.forEach((button) => {
+      button.setAttribute('aria-pressed', String(button === filter));
+    });
+
+    galleryItems.forEach((item) => {
+      const matches = category === 'all'
+        ? item.dataset.showInAll !== 'false'
+        : item.dataset.categories.split(' ').includes(category);
+      item.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    galleryEmpty.hidden = visibleCount > 0;
+    if (visibleCount === 0) {
+      galleryEmpty.textContent = `Todavía no hay fotos en la categoría “${filter.textContent.trim()}”. Puedes agregarlas cuando tengas imágenes de la finca.`;
+    }
+  }));
+
+  videoFilters.forEach((filter) => filter.addEventListener('click', () => {
+    const category = filter.dataset.videoCategory;
+
+    videoFilters.forEach((button) => {
+      button.setAttribute('aria-pressed', String(button === filter));
+    });
+
+    videoCards.forEach((card) => {
+      const matches = card.dataset.videoCategories.split(' ').includes(category);
+      card.hidden = !matches;
+      if (!matches) card.querySelector('video').pause();
+    });
+  }));
+
+  function openLightbox(index, photoList = photos){
+    lightboxPhotos = photoList;
     currentPhoto = index;
-    returnFocus = photos[index];
-    const btn = photos[index];
+    returnFocus = lightboxPhotos[index];
+    const btn = lightboxPhotos[index];
     const img = btn.querySelector('img');
     lbImg.src = img.src;
     lbImg.alt = img.alt;
@@ -1788,11 +1966,17 @@
     if (returnFocus) returnFocus.focus();
   }
   function showPhoto(delta){
-    currentPhoto = (currentPhoto + delta + photos.length) % photos.length;
-    openLightbox(currentPhoto);
+    currentPhoto = (currentPhoto + delta + lightboxPhotos.length) % lightboxPhotos.length;
+    openLightbox(currentPhoto, lightboxPhotos);
   }
 
-  photos.forEach((btn, i) => btn.addEventListener('click', () => openLightbox(i)));
+  photos.forEach((btn) => btn.addEventListener('click', () => {
+    const visiblePhotos = photos.filter((photo) => {
+      const item = photo.closest('#galeria .g-item');
+      return !item || !item.hidden;
+    });
+    openLightbox(visiblePhotos.indexOf(btn), visiblePhotos);
+  }));
   document.getElementById('lbClose').addEventListener('click', closeLightbox);
   document.getElementById('lbPrev').addEventListener('click', () => showPhoto(-1));
   document.getElementById('lbNext').addEventListener('click', () => showPhoto(1));
